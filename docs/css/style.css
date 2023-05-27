@@ -686,7 +686,11 @@ color: #373A39;
   margin-left: 150px;
   margin-bottom: 20px;
 }
-
+.shadow {
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 5px;
+   }
 .header {
   height: 60px;
   width: 100%; 
@@ -699,7 +703,7 @@ color: #373A39;
   top: 0;
  
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5);  */
   z-index: 1;
 }
 
@@ -719,6 +723,39 @@ color: #373A39;
 .menu__btn {
   display: none;
 }
+/*  */
+/* .menu__list {
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+
+  background-color: #fff;
+  display: block;
+  text-align: left;
+  transform: translateY(-200%);
+  transition: all .5s;
+
+}
+.menu__list.menu__list--active {
+  transform: translateY(0);
+  transition: all .5s;
+}
+ul.menu__list {
+  padding: 10px;
+}
+.menu__list-item + .menu__list-item {
+  margin-left: 0;
+}
+.menu__list-link
+
+ {
+  display: block;
+  padding: 17px;
+} */
+/*  */
 .menu__list {
    display: flex;
    
@@ -855,7 +892,39 @@ transition: all .4s;
  color: darkslategray; 
  
 }
+/*  */
+/* .menu__list {
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 
+  background-color: #fff;
+  display: block;
+  text-align: left;
+  transform: translateY(-200%);
+  transition: all .5s;
+
+}
+.menu__list.menu__list--active {
+  transform: translateY(0);
+  transition: all .5s;
+}
+ul.menu__list {
+  padding: 10px;
+}
+.menu__list-item + .menu__list-item {
+  margin-left: 0;
+}
+.menu__list-link
+
+ {
+  display: block;
+  padding: 17px;
+} */
+/*  */
 
 .top__contact {
   max-width: 400px;
@@ -1582,8 +1651,9 @@ line-height: 20px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 80px;
-  
+  top: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+
   background-color: #fff;
   display: block;
   text-align: left;
@@ -1601,12 +1671,13 @@ ul.menu__list {
 .menu__list-item + .menu__list-item {
   margin-left: 0;
 }
-.menu__list-link,
-.menu__list-link--yellow
+.menu__list-link
+
  {
   display: block;
   padding: 17px;
 }
+
 .header__title {
        font-size: 54px;
     line-height: 48px;
