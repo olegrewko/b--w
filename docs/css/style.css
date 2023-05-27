@@ -884,8 +884,8 @@ transition: all .4s;
  {
   display: flex;
   flex-wrap: nowrap;  
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
    
