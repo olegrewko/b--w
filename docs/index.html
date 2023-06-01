@@ -33,19 +33,7 @@
     <link rel="stylesheet" href="css/media.css" /> -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-//       function myFunction() {
-//   document.getElementsById("dropdown-submenu__list").classList.toggle("dropdown-submenu__list--show");
-// }
-  // let flag = false;
-  // $('ul').click(function() {
-  //   if(!flag){
-  //     $('.dropdown-submenu__list').slideDown();
-    
-  //   }else{
-  //     $('.dropdown-submenu__list').slideUp();
-  //   }
-  //   flag=!flag;
-  // })
+
     </script>
   </head>
 
@@ -61,27 +49,29 @@
               <button class="menu__btn">
                 <img src="img/menu-btn.svg" alt="" />
               </button>
-              <ul class="menu__list">
-                <li class="menu__list-item dropdown-submenu__item">
-                  <a class="menu__list-link dropdown-submenu__title menu__list-link--drop" onclick="myFunction()">Speakers</a>
-                  <ul class="dropdown-submenu__list" id="dropdown-submenu__list">
-									<li class="dropdown-submenu__list-item"><a href="#heat">Loudspeakers</a></li>
-									<li class="dropdown-submenu__list-item"><a href="">Sound Bars</a></li>
-									<li class="dropdown-submenu__list-item"><a href="">Home Theater</a></li>
-									<li class="dropdown-submenu__list-item"><a href="">Integrated Solutions</a></li>
-									</ul>
-                  <script>
-
-                  </script>
-                </li>
-                <li class="menu__list-item dropdown-submenu__item">
-                  <a class="menu__list-link dropdown-submenu__title menu__list-link--drop" href="#job">Headphones</a>
+              <div class="menu__list">
+                <div class="dropdown">
+                  <a class="dropbtn" onclick="myFunction()">Speakers</a>
+                                              
+                
+                 <div class="dropdown-content" id="myDropdown">
+									<a href="#heat">Loudspeakers</a>
+                 	<a href="">Sound Bars</a>
+									<a href="">Home Theater</a>
+									<a href="">Integrated Solutions</a>
+								 </div>
+                </div>
+                
+                <div class="menu__list-item dropdown-submenu__item">
+                  <a class="menu__list-link dropdown-submenu__title menu__list-link--drop" onclick="myFunction()">Headphones</a>
                   <ul class="dropdown-submenu__list">
 									<li class="dropdown-submenu__list-item"><a href="">Headphones</a></li>
 									<li class="dropdown-submenu__list-item"><a href="">Earbuds</a></li>
 									
 									</ul>
-                </li>
+                </div>  
+                
+                <span class="dropdown-submenu__list-item--toggle"></span>
                 <li class="menu__list-item dropdown-submenu__item">
                   <a class="menu__list-link dropdown-submenu__title menu__list-link--drop" href="#job02">Wireless speakers</a>
                   <ul class="dropdown-submenu__list">
@@ -91,11 +81,12 @@
 									
 									</ul>
                 </li>
+                <span class="dropdown-submenu__list-item--toggle"></span>
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#heat">Find Store</a>
                 </li>
               
-              </ul>
+              </div>
             </nav>
           </div>
         </div>
@@ -1034,6 +1025,7 @@ WiFi, Apple® AirPlay 2®, Spotify® Connect, Roon и Bluetooth совмести
   
     <script src="../dist/js/main.min.js"></script>
 
+    
     <script type="text/javascript">
       $(document).ready(function () {
         var defaults = {
@@ -1047,6 +1039,20 @@ WiFi, Apple® AirPlay 2®, Spotify® Connect, Roon и Bluetooth совмести
           easingType: "easeOutQuart",
         });
       });
+
+
+          if (!event.target.matches('.menu__list-link')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-submenu__list");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+          }
+        }
     </script>
         
  
