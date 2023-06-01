@@ -30,7 +30,6 @@ var paths = {
   }
  
 };
- 
 
  const clean = () => {
 	return del(['dist/*'])

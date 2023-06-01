@@ -723,39 +723,7 @@ color: #373A39;
 .menu__btn {
   display: none;
 }
-/*  */
-/* .menu__list {
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 
-  background-color: #fff;
-  display: block;
-  text-align: left;
-  transform: translateY(-200%);
-  transition: all .5s;
-
-}
-.menu__list.menu__list--active {
-  transform: translateY(0);
-  transition: all .5s;
-}
-ul.menu__list {
-  padding: 10px;
-}
-.menu__list-item + .menu__list-item {
-  margin-left: 0;
-}
-.menu__list-link
-
- {
-  display: block;
-  padding: 17px;
-} */
-/*  */
 .menu__list {
    display: flex;
    
@@ -764,25 +732,12 @@ ul.menu__list {
 
 .menu__list-item {
   position: relative;
+  display: inline-block;
 	padding: 5px 0;
 }
-/* .menu__list-link--drop::after {
-  
-	content: "";
-	width: 10px;
-	height: 10px;
-  top: 0;
-  left: 0;
-	background-image: url("../img/download.svg");
-	background-size: contain;
-	background-position: center ;
-	background-repeat: no-repeat;
-	display: inline-block;
-	margin-left: 5px;
-  z-index: 100;
-	transition: transform 0.3s;
-} */
-.menu__list-item + .menu__list-item {
+
+
+.dropdown + .dropdown {
   margin-left: 40px;
 }
 .logo__title {
@@ -814,9 +769,9 @@ font-size: 25px;
  
  color: black; 
 }
-.menu__list-link {
+.dropbtn {
   
-  display: block;
+  /* display: block; */
   padding: 10px 5px;
 font-family: 'Montserrat';
 font-style: normal;
@@ -824,107 +779,69 @@ font-weight: 700;
 font-size: 12px;
 line-height: 14px;
 
-color: black; 
+color: black;
+cursor: pointer; 
 transition: all .4s;
 }
-.menu__list-link--drop::after {
-  
-	content: "";
-	width: 10px;
-	height: 10px;
- 
-	background-image: url("../img/plus.png");
-	background-size: cover;
-	background-position: center ;
-	background-repeat: no-repeat;
-	display: inline-block;
-	margin-left: 5px;
-  z-index: 100;
-	transition: transform 0.3s;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-submenu__list {
-  /* display: none; */
-  
+  display: none;  
 	position: absolute;
 	background-color: #fff;
   left: 0;
-	
 	top: 60px; 
 	padding: 0px;
 	display: block;
 	box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.2);
 	transition: all 0.3s;
-	opacity: 0;
-	visibility: hidden;
+	/* opacity: 0;
+	visibility: hidden; */
   /* opacity: 1;
 	visibility: visible; */
 }
-.dropdown-submenu__list--show {
-  position: absolute;
-	background-color: rgba(255,255,255, 1);
-  left: 0;
-	
-	top: 100%; 
-	padding: 0px;
-	display: block;
-	box-shadow: 0 5px 5px 0 rgba(0,0,0, 0.2);
-	transition: all 0.3s;
-	
-  opacity: 1;
-	visibility: visible;
+.dropbtn a:hover {
+  color: darkslategray;
 }
+.dropdown-content a:hover {
+  color: darkslategray;
+}
+
 .dropdown-submenu__list + .dropdown-submenu__list {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .dropdown-submenu__list-item {
     display: block;
-  padding: 5px 5px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 14px;
+    padding: 5px 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
 
-color: gray; 
-transition: all .4s;
+    color: gray; 
+    transition: all .4s;
 }
 .menu__list-link:hover {
  color: darkslategray; 
  
 }
-/*  */
-/* .menu__list {
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-
-  background-color: #fff;
+.show {
   display: block;
-  text-align: left;
-  transform: translateY(-200%);
-  transition: all .5s;
+   /* opacity: 1;
+	visibility: visible; */
+}
 
-}
-.menu__list.menu__list--active {
-  transform: translateY(0);
-  transition: all .5s;
-}
-ul.menu__list {
-  padding: 10px;
-}
-.menu__list-item + .menu__list-item {
-  margin-left: 0;
-}
-.menu__list-link
-
- {
-  display: block;
-  padding: 17px;
-} */
-/*  */
 
 .top__contact {
   max-width: 400px;
