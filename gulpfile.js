@@ -43,8 +43,7 @@ var paths = {
 }
  function copyfolder() {
     return gulp.src([ 'docs/fonts/**/*', 'docs/js/jquery.js', 'docs/css/fotorama464.min.css'] ) 
-     
-        .pipe(copy('dist', {prefix: 1} ))
+    .pipe(copy('dist', {prefix: 1} ))
     
 }
 
