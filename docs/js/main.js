@@ -51,6 +51,13 @@ $(function () {
 
          function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
+        
+    }
+         function myFunctionHeadphones() {
+        document.getElementById("myHeadphones").classList.toggle("show");
+    }
+         function myFunctionWireless() {
+        document.getElementById("myWireless").classList.toggle("show");
     }
       
 
