@@ -7,6 +7,61 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+   url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+   url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat-SemiBold'),
+   url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat-Medium'),
+   url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+   url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+   url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+   url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
 
 html {
   scroll-behavior: smooth;
@@ -507,7 +562,7 @@ li {
     display: none;
 }
 /* styles */
-@font-face {
+/* @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
@@ -561,7 +616,7 @@ li {
    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
   font-display: swap;
-}
+} */
 * {
   box-sizing: border-box;
 }
